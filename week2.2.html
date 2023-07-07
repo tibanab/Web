@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week2</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      ul {
+        text-align: center;
+        padding: 0;
+        line-height: 1.5;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        color: darkslategrey;
+        background-color: transparent;
+        border-color: darkslategrey;
+        border: 1px solid darkslategrey;
+        border-radius: 5px;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        color: white;
+        background: darkslategrey;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SheCodes</h1>
+    <ul>
+      <li>SheCodes Workshop</li>
+      <li>SheCodes+</li>
+      <li>SheCodes Express</li>
+      <li>SheCodes Story</li>
+    </ul>
+    <button>Contact Us</button>
+    <script>
+      function contactUs() {
+        let name = prompt("whats your name?");
+        let email = prompt("Enter your Email address!");
+
+        let h1 = document.querySelector("h1");
+        h1.innerHTML =
+          "<em>thank you</em> " + name + " <br /> we'll be in touch!";
+      }
+
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>

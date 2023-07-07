@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Final Project</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #345d9d;
+        border: 2px solid #345d9d;
+        padding: 15px;
+        font-weight: bolder;
+        border-radius: 4px;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 18px;
+        margin: 20px 0 10px;
+        text-justify: newspaper;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: #345d9d;
+        color: #ffff;
+        font-size: 40px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: white;
+        color: #345d9d;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        background-image: linear-gradient(to top, #345d9d 0%, #b5d3ea 100%);
+        border-radius: 10px;
+        color: white;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+      .footer {
+        text-align: center;
+        font-size: medium;
+        color: #b5d3ea;
+      }
+      .learn {
+        text-decoration: none;
+        color: #fdd641;
+        font-size: 19px;
+      }
+      .learn:hover {
+        text-decoration: underline;
+        color: #b5d3ea;
+      }
+      .link {
+        text-decoration: none;
+        color: #fdd641;
+        font-size: 19px;
+      }
+      .link:hover {
+        text-decoration: underline;
+        color: #b5d3ea;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I LOVE Airprlane ✈️</h1>
+      <h2><em>Especially AirBus A380</em></h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/579/original/airbus-and-cfm-a380-propulsion-demonstrator.jpg?1681741251"
+        alt="airplane airbus A380"
+      />
+      <hr />
+      <p>
+        <strong>Airbus A380</strong> is a large wide-body airliner that was
+        developed and produced by Airbus. It is the world's largest passenger
+        airliner and only full-length double-deck jet airliner. Airbus studies
+        started in 1988, and the project was announced in 1990 to challenge the
+        dominance of the Boeing 747 in the long-haul market. The then-designated
+        A3XX project was presented in 1994; Airbus launched the €9.5 billion
+        ($10.7 billion) A380 programme on 19 December 2000. The first prototype
+        was unveiled in Toulouse on 18 January 2005, with its first flight on 27
+        April 2005. It then obtained its type certificate from the European
+        Aviation Safety Agency (EASA) and the US Federal Aviation Administration
+        (FAA) on 12 December 2006.
+        <br />
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Airbus_A380"
+        target="_blank"
+        class="learn"
+      >
+        Learn more on Wikipedia
+        <br />
+      </a>
+      <button class="bookTicket">👉 Book A Ticket</button>
+      <p class="footer">
+        This page was built by
+        <a href="http://tinabarghi.com/" target="_blank" class="link">
+          Tina Barghi
+        </a>
+      </p>
+    </div>
+    <script>
+      function book() {
+        let bookTicket = prompt("Enter your Email?");
+        alert(" We will sent you a Link to start your booking process");
+      }
+      let bookTicket = document.querySelector(".bookTicket");
+      bookTicket.addEventListener("click", book);
+    </script>
+  </body>
+</html>

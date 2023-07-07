@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather by Tina</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 34px;
+        line-height: 48px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        color: coral;
+        /* the color is #1a64d6 but i want to use my own   */
+      }
+      h2 {
+        text-align: center;
+        font-size: 34px;
+        line-height: 48px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0px;
+      }
+      li {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      li:hover {
+        background: rgb(255, 238, 238);
+      }
+      p {
+        font-size: 18px;
+        opacity: 0.7;
+        text-align: center;
+        font-family: monospace;
+      }
+      button {
+        display: block;
+        margin: 30px auto;
+        background: darkcyan;
+        color: white;
+        border: 1px solid darkcyan;
+        border-radius: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px 25px;
+        box-shadow: 1px 3px 10px 0px gray;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: transparent;
+        color: darkcyan;
+        transition: all 200ms ease-in-out;
+      }
+      .mine {
+        color: coral;
+        font-size: 18px;
+        font-family: monospace;
+        opacity: 0.7;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      ⛅
+      <br />
+      Currently 21&#176; in Tokyo
+    </h1>
+    <h2>13&#176; / <strong>22&#176;</strong></h2>
+    <br />
+    <ul>
+      <li>
+        <h3>🌧️ Tomorrow</h3>
+        <p>10° / <strong>22°</strong></p>
+      </li>
+      <li>
+        <h3>⛅ Saturday</h3>
+        <p>15° / <strong>17°</strong></p>
+      </li>
+      <li>
+        <h3>☀️ Sunday</h3>
+        <p>25° / <strong>28°</strong></p>
+      </li>
+    </ul>
+
+    <button>Change City</button>
+    <div class="mine">Coded by Tina B</div>
+  </body>
+</html>
